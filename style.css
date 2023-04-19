@@ -52,3 +52,28 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+/* Media queries for responsive design */
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+    p {
+        font-size: 16px;
+    }
+    ul li {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 14px;
+    }
+    ul li {
+        font-size: 14px;
+    }
+}
