@@ -243,6 +243,33 @@ footer {
   font-size: 0.85em;
 }
 
+/* Skill Category Headers */
+.skill-category {
+  font-size: 1.15em;
+  color: #302b63;
+  margin: 28px 0 12px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #d0d0d8;
+}
+
+.skill-category:first-of-type {
+  margin-top: 0;
+}
+
+/* Thesis */
+.thesis {
+  font-size: 0.88em;
+  color: #555;
+  margin-top: 4px;
+}
+
+/* Sub text */
+.sub-text {
+  font-size: 0.88em;
+  color: #666;
+  margin-top: 12px;
+}
+
 /* Responsive */
 @media (max-width: 600px) {
   header h1 { font-size: 1.8em; }
