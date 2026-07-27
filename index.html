@@ -32,7 +32,8 @@
     <div class="container">
       <h2>About Me</h2>
       <p>AI Manager and PhD researcher with <strong>11 years in AI and data analysis</strong>, <strong>15+ years in full-stack programming</strong>, and IoT platform experience since 2018. Currently leading AI strategy at a Canadian manufacturer &mdash; building production ML systems and MLOps pipelines, deploying LLM-powered and agentic applications (RAG, multi-agent orchestration, MCP) on AWS, Azure, and GCP, and driving data-informed decisions across 8+ departments.</p>
-      <p>My PhD research in healthcare AI produced <strong>10 peer-reviewed publications</strong> with <strong>240 citations</strong>, applying deep learning, reinforcement learning, and causal inference to clinical decision support using large-scale longitudinal data. I bring deep expertise across the full AI/ML lifecycle &mdash; from research, experimentation (A/B testing, causal inference), and generative AI through production deployment, MLOps, and executive communication.</p>
+      <p>My PhD research in healthcare AI produced <strong>10 peer-reviewed publications</strong> with <strong>240 citations</strong>, applying deep learning, reinforcement learning, and causal inference to clinical decision support using large-scale longitudinal data. I bring deep expertise across the full AI/ML lifecycle &mdash; from research, experimentation (A/B testing, causal inference), forecasting and generative AI through production deployment, MLOps, and executive communication.</p>
+      <p>My open-source work is built around a single discipline: <strong>validating methods against a known ground truth</strong> and reporting what fails as clearly as what works &mdash; measuring what data leakage actually costs a forecast, showing when a recommender should decline to answer, and testing whether &ldquo;doubly robust&rdquo; survives a broken model. Every repository is reproducible from seed.</p>
       <div class="stats">
         <div class="stat"><span class="num">240</span><span class="label">Citations</span></div>
         <div class="stat"><span class="num">10</span><span class="label">Publications</span></div>
@@ -105,7 +106,11 @@
         </div>
         <div class="skill-card">
           <h3>Experimentation</h3>
-          <p>A/B test design &amp; evaluation; multi-armed bandits; incrementality &amp; media-mix modeling (MMM); Bayesian methods; hypothesis testing; experimental design; small-sample &amp; 0&rarr;1 analysis</p>
+          <p>A/B test design &amp; evaluation; SRM &amp; validity guards; <strong>power analysis by simulation</strong>, MDE &amp; sample-size planning; CUPED variance reduction; multi-armed bandits; incrementality &amp; media-mix modeling (MMM); Bayesian methods; small-sample &amp; 0&rarr;1 analysis</p>
+        </div>
+        <div class="skill-card">
+          <h3>Forecasting &amp; Uncertainty Quantification</h3>
+          <p>Time-series forecasting with external drivers; rolling-origin &amp; walk-forward backtesting; leakage auditing (feature timing, selection, publication delay); seasonal-naive benchmarking &amp; MASE; <strong>conformal prediction intervals</strong> (split, normalized, horizon-specific); surrogate modelling &amp; safe recommendation rules under uncertainty</p>
         </div>
         <div class="skill-card">
           <h3>Healthcare &amp; Clinical Data</h3>
@@ -291,9 +296,17 @@
           <h3>Agentic NLP Platform + Eval Harness</h3>
           <p>Multi-agent support triage (router, extractor, tool-calling KB, responder) with structured outputs and a built-in evaluation harness &mdash; routing/tool-selection/escalation accuracy, cost/latency, LLM-as-a-judge, and regression gating; runs offline or on Claude/GPT-4o</p>
         </a>
+        <a href="https://github.com/Fuzzy-sh/surrogate-setpoint-optimization" class="project" target="_blank">
+          <h3>Surrogate Modelling for Industrial Setpoint Optimisation</h3>
+          <p>Response-surface model with calibrated uncertainty for scoring equipment setpoint changes before they are applied. Ranking candidates by predicted mean is <strong>net-negative</strong> (true mean &minus;3.38, 9/20 harmful); adding a k&#8209;NN support check and a lower-confidence-bound rule turns it positive (+1.22). Grouped-by-asset validation against an oracle R&sup2; ceiling, conformal-calibrated intervals (0.80 coverage), and a reported negative result &mdash; ensemble disagreement was a weak error signal (r&nbsp;=&nbsp;0.16) next to distance-to-training-support (r&nbsp;=&nbsp;0.71)</p>
+        </a>
+        <a href="https://github.com/Fuzzy-sh/demand-forecasting-external-signals" class="project" target="_blank">
+          <h3>Demand Forecasting with External Economic Signals</h3>
+          <p>Monthly demand forecasting where customer economics drive purchases with a multi-month lead time &mdash; and a measurement of the three ways a forecasting backtest lies. Feature-timing leakage overstates accuracy by <strong>12&ndash;14%</strong>; automated lag selection loses to a flat guess because persistent AR(1) drivers make lags weakly identified; segment-margin construction lifts coefficient sign consistency from <strong>0.56 to 0.76</strong> where collinear raw prices give coin flips. Includes rolling-origin backtests, recursive 6&#8209;month forecasts with horizon-specific conformal bands, and a production plan</p>
+        </a>
         <a href="https://github.com/Fuzzy-sh/ab-causal-toolkit" class="project" target="_blank">
-          <h3>A/B Testing &amp; Causal Inference Toolkit</h3>
-          <p>Experimentation framework validated against a known ground-truth effect &mdash; A/B analysis (z/t-tests, SRM guard, power/MDE, CUPED) plus causal methods (propensity scores, IPW, doubly-robust AIPW) that de-bias confounded rollouts where naive comparisons fail</p>
+          <h3>A/B Testing, Causal Inference &amp; Geo Experiments</h3>
+          <p>One toolkit spanning three situations, each validated against a known ground-truth effect. <strong>Randomised:</strong> z/t&#8209;tests, SRM guard, power/MDE, CUPED. <strong>Confounded:</strong> propensity scores, balance diagnostics, IPW and doubly-robust AIPW &mdash; recovering $3.00 where the naive difference reads $6.87. <strong>Geo-level</strong> (when per-user attribution is impossible): market-randomised design with a time-based-regression counterfactual, plus a simulation power analysis showing the experiment was underpowered &mdash; a near-exact estimate that still fails at p&nbsp;=&nbsp;0.060. Narrated notebook includes a direct test of double robustness and what unmeasured confounding does to a passing diagnostic</p>
         </a>
         <div class="project">
           <h3>Production Scheduling Lab &nbsp;<span style="font-size:0.68em;font-weight:600;color:#fff;background:#6b8e23;padding:2px 7px;border-radius:10px;vertical-align:middle;">PRIVATE</span></h3>
