@@ -31,12 +31,12 @@
   <section id="about">
     <div class="container">
       <h2>About Me</h2>
-      <p>AI Manager and PhD researcher with <strong>11 years in AI and data analysis</strong>, <strong>15+ years in full-stack programming</strong>, and IoT platform experience since 2018. Currently leading AI strategy at a Canadian manufacturer &mdash; building production ML systems and MLOps pipelines, deploying LLM-powered and agentic applications (RAG, multi-agent orchestration, MCP) on AWS, Azure, and GCP, and driving data-informed decisions across 8+ departments.</p>
-      <p>My PhD research in healthcare AI produced <strong>10 peer-reviewed publications</strong> with <strong>240 citations</strong>, applying deep learning, reinforcement learning, and causal inference to clinical decision support using large-scale longitudinal data. I bring deep expertise across the full AI/ML lifecycle &mdash; from research, experimentation (A/B testing, causal inference), forecasting and generative AI through production deployment, MLOps, and executive communication.</p>
+      <p>AI Manager and PhD researcher with <strong>11 years in AI and data analysis</strong>, <strong>15+ years in full-stack programming</strong>, and IoT platform experience since 2018. Currently leading AI strategy at a Canadian manufacturer &mdash; building production ML systems and MLOps pipelines, deploying LLM-powered and agentic applications (RAG, multi-agent orchestration, MCP) on Azure and Databricks, and driving data-informed decisions across 8+ departments.</p>
+      <p>My PhD research in healthcare AI produced <strong>10+ peer-reviewed publications</strong> with <strong>264 citations</strong>, applying deep learning, reinforcement learning, and causal inference to clinical decision support using large-scale longitudinal data. I bring deep expertise across the full AI/ML lifecycle &mdash; from research, experimentation (A/B testing, causal inference), forecasting and generative AI through production deployment, MLOps, and executive communication.</p>
       <p>My open-source work is built around a single discipline: <strong>validating methods against a known ground truth</strong> and reporting what fails as clearly as what works &mdash; measuring what data leakage actually costs a forecast, showing when a recommender should decline to answer, and testing whether &ldquo;doubly robust&rdquo; survives a broken model. Every repository is reproducible from seed.</p>
       <div class="stats">
-        <div class="stat"><span class="num">240</span><span class="label">Citations</span></div>
-        <div class="stat"><span class="num">10</span><span class="label">Publications</span></div>
+        <div class="stat"><span class="num">264</span><span class="label">Citations</span></div>
+        <div class="stat"><span class="num">10+</span><span class="label">Publications</span></div>
         <div class="stat"><span class="num">11</span><span class="label">Years in AI</span></div>
         <div class="stat"><span class="num">4.0</span><span class="label">PhD GPA</span></div>
         <div class="stat"><span class="num">800+</span><span class="label">Students Mentored</span></div>
@@ -90,7 +90,7 @@
         </div>
         <div class="skill-card">
           <h3>Agent Architectures</h3>
-          <p>Multi-agent orchestration (CrewAI, LangGraph, GPT-4o); function/tool calling; MCP; agentic systems &amp; agent frameworks; serverless AI pipelines; ASR&ndash;LLM integration</p>
+          <p>Multi-agent designs (router + specialist agents with typed hand-offs); LangChain, LangGraph, LlamaIndex; function/tool calling; MCP servers &amp; clients; agent evaluation &amp; regression gates</p>
         </div>
         <div class="skill-card">
           <h3>LLM APIs &amp; Tools</h3>
@@ -120,10 +120,6 @@
 
       <h3 class="skill-category">Cloud, MLOps &amp; Infrastructure</h3>
       <div class="skills-grid">
-        <div class="skill-card">
-          <h3>AWS</h3>
-          <p>Lambda, Bedrock, S3, Step Functions, EventBridge, SQS, API Gateway; serverless architectures; event-driven processing</p>
-        </div>
         <div class="skill-card">
           <h3>Azure &amp; Databricks</h3>
           <p>Azure IoT Hub, Data Lake, SQL, ML, DevOps; Databricks (Delta Lake, ML Pipelines, Jobs/Workflows, SQL, web app hosting)</p>
@@ -213,10 +209,9 @@
           <li>Developed novel hierarchical RL model for optimal treatment identification &mdash; improving outcomes by 25%, projected to save $8B for Canada</li>
           <li>Delivered 80%+ AUC in clinical prediction using GRU deep learning on irregular longitudinal data</li>
           <li>Enhanced accuracy by 5% using ensemble hybrid CNN+GRU+attention architectures</li>
-          <li>Deployed serverless LLM platform on AWS Lambda, Bedrock, EventBridge with multi-agent orchestration</li>
-          <li>Built multi-agent AI systems using GPT-4o with automated evaluation pipelines</li>
+          <li>Mentored a student research team on transformer models (BERT, GPT) &mdash; fine-tuning and zero-/few-shot prompting to find feature requests and bug reports in app reviews and tweets; co-authored the paper in <em>IEEE Transactions on Software Engineering</em> (2026)</li>
           <li>Processed millions of records using HPC clusters and parallel computing</li>
-          <li>Published as lead author on 9 of 10 papers in top-tier venues</li>
+          <li>First author on 7 peer-reviewed papers (IEEE Access, Scientific Reports, PLOS Digital Health, IEEE BIBM)</li>
         </ul>
       </div>
 
@@ -236,8 +231,8 @@
         <h3>Researcher &amp; ML Specialist</h3>
         <p class="meta">Universiti Teknologi Malaysia &bull; Aug 2018 &ndash; Oct 2020</p>
         <ul>
-          <li>Achieved 99.87% accuracy in breast cancer classification using deep learning (151 citations)</li>
-          <li>Designed Wide-Attention GAN for medical image super-resolution &mdash; 4% improvement (61 citations)</li>
+          <li>Achieved 99.87% accuracy in breast cancer classification using deep learning (160 citations)</li>
+          <li>Designed Wide-Attention GAN for medical image super-resolution &mdash; 4% improvement (72 citations)</li>
           <li>Built secure IoT data pipeline prototype using Hyperledger Fabric blockchain</li>
           <li>Conducted graph-based network analysis for supply chain optimization</li>
         </ul>
@@ -265,18 +260,20 @@
   <!-- PUBLICATIONS -->
   <section id="publications">
     <div class="container">
-      <h2>Publications <span class="sub">240 citations &bull; h-index: 4 &bull; lead author on 9</span></h2>
+      <h2>Publications <span class="sub">264 citations &bull; h-index: 5 &bull; first author on 7</span></h2>
       <ol>
         <li><strong>F. Shahidi</strong> et al. &ldquo;Best Treatment Identification in Mental Health Using Hierarchical RL.&rdquo; <em>Under review</em>, 2026.</li>
+        <li>C. Sharma, M. Svoboda, N. Sharma, S. Ye, R. Ravi, <strong>F. Shahidi</strong>, G. Ginde. &ldquo;Mining Feature Requests and Bug Reports from Tweets and App Store Reviews: Are We There Yet? Insights from a Replication Study.&rdquo; <em>IEEE Transactions on Software Engineering</em>, 2026.</li>
+        <li>R. Barry, G. Messier et al. (incl. <strong>F. Shahidi</strong>). &ldquo;Association Between Homelessness and Mental Healthcare Utilization Among People With Addictions and Mental Health Problems.&rdquo; <em>Canadian Journal of Psychiatry</em>, 2026.</li>
         <li>R. Barry, G. Messier et al. (incl. <strong>F. Shahidi</strong>). &ldquo;Characteristics of Adults With Addictions and Mental Health Problems Who Have Experienced Homelessness.&rdquo; <em>Canadian Journal of Psychiatry</em>, 71(2), 2026.</li>
         <li><strong>F. Shahidi</strong> et al. &ldquo;Risk Factors and Predictive Performance for Homelessness Using Administrative Data.&rdquo; <em>PLOS Digital Health</em>, 4(10), 2025.</li>
-        <li><strong>F. Shahidi</strong> et al. &ldquo;Preprocessing of Time-Series Healthcare Data for Deep Learning.&rdquo; <em>IEEE Access</em>, 2024. [4 citations]</li>
+        <li><strong>F. Shahidi</strong> et al. &ldquo;Preprocessing of Time-Series Healthcare Data for Deep Learning.&rdquo; <em>IEEE Access</em>, 2024. [7 citations]</li>
         <li><strong>F. Shahidi</strong> et al. &ldquo;Enhancing Risk Prediction Using Ensemble Hybrid Models.&rdquo; <em>IEEE BIBM</em>, Lisbon, 2024.</li>
-        <li><strong>F. Shahidi</strong> et al. &ldquo;ML Risk Estimation and Prediction of Death in Continuing Care.&rdquo; <em>Scientific Reports (Nature)</em>, 2023. [11 citations]</li>
+        <li><strong>F. Shahidi</strong> et al. &ldquo;ML Risk Estimation and Prediction of Death in Continuing Care.&rdquo; <em>Scientific Reports (Nature)</em>, 2023. [10 citations]</li>
         <li><strong>F. Shahidi</strong> et al. &ldquo;Epidemiological Cohort Creation for ML Prediction.&rdquo; <em>arXiv</em>, 2023. [Preprint]</li>
-        <li><strong>F. Shahidi</strong>. &ldquo;Breast Cancer Super-Resolution Using Wide-Attention GAN.&rdquo; <em>IEEE Access</em>, 2021. [61 citations]</li>
-        <li><strong>F. Shahidi</strong> et al. &ldquo;Breast Cancer Classification Using Deep Learning.&rdquo; <em>IEEE Access</em>, 2020. [151 citations]</li>
-        <li>A. Razali et al. (incl. <strong>F. Shahidi</strong>). &ldquo;Text-Based Web Page Classification Using ML.&rdquo; <em>IJACSA</em>, 2020. [8 citations]</li>
+        <li><strong>F. Shahidi</strong>. &ldquo;Breast Cancer Super-Resolution Using Wide-Attention GAN.&rdquo; <em>IEEE Access</em>, 2021. [72 citations]</li>
+        <li><strong>F. Shahidi</strong> et al. &ldquo;Breast Cancer Classification Using Deep Learning.&rdquo; <em>IEEE Access</em>, 2020. [160 citations]</li>
+        <li>A. Razali et al. (incl. <strong>F. Shahidi</strong>). &ldquo;Text-Based Web Page Classification Using ML.&rdquo; <em>IJACSA</em>, 2020. [7 citations]</li>
       </ol>
       <p><a href="https://scholar.google.ca/citations?user=qkFd_9gAAAAJ&hl=en" target="_blank">View full profile on Google Scholar &rarr;</a></p>
       <p class="sub-text"><strong>Peer Reviewer:</strong> Springer Nature Journals &amp; IEEE Access &mdash; 12 manuscripts reviewed (2024&ndash;2025)</p>
@@ -288,6 +285,14 @@
     <div class="container">
       <h2>Selected Projects</h2>
       <div class="projects-grid">
+        <a href="https://github.com/Fuzzy-sh/erp-sql-agent" class="project" target="_blank">
+          <h3>ERP Question-Answering Agent (text-to-SQL)</h3>
+          <p>An agent that reads the real schema and a data dictionary before writing SQL, with a validator that only lets safe, read-only queries over real tables and columns run, and a 25-question evaluation. With the small Claude Haiku model: <strong>100% correct vs 64%</strong> for LangChain&rsquo;s standard SQL chain, which cut results off at 5 rows, crashed on formatting and answered unanswerable questions with the wrong data. Also runs as an MCP server; walkthrough notebook included</p>
+        </a>
+        <a href="https://github.com/Fuzzy-sh/docs-rag-mcp" class="project" target="_blank">
+          <h3>Documentation Q&amp;A: Retrieval Methods vs LangChain &amp; LlamaIndex</h3>
+          <p>RAG over three programming manuals with six retrieval methods (vector, BM25, hybrid, re-ranking, multi-query, HyDE) compared against LangChain&rsquo;s and LlamaIndex&rsquo;s standard pipelines; cited answers or &ldquo;Not in docs&rdquo;; an MCP server; every run tracked in MLflow. <strong>95% correct</strong>, citing the exact section every time; found LlamaIndex&rsquo;s default chunks were 4&times; too long for the embedding model (<strong>52% &rarr; 88%</strong> correct with one setting) and that re-ranking made answers <em>less</em> grounded</p>
+        </a>
         <a href="https://github.com/Fuzzy-sh/vlm-eval-demo" class="project" target="_blank">
           <h3>VLM Evaluation Harness</h3>
           <p>Evaluation framework for Vision-Language Models (GPT-4V/4o) labeling at scale &mdash; quality metrics, cost/latency, human-in-the-loop routing, regression detection, and LLM-as-a-judge</p>
@@ -325,11 +330,11 @@
           <p>GRU deep learning achieving 80%+ AUC on irregularly sampled longitudinal data</p>
         </a>
         <a href="https://github.com/Fuzzy-sh/Breast-Cancer-Classification" class="project" target="_blank">
-          <h3>Cancer Classification (151 citations)</h3>
+          <h3>Cancer Classification (160 citations)</h3>
           <p>Deep learning for histopathology image classification &mdash; 99.87% accuracy</p>
         </a>
         <a href="https://github.com/Fuzzy-sh/WA-SRGAN" class="project" target="_blank">
-          <h3>Wide-Attention GAN (61 citations)</h3>
+          <h3>Wide-Attention GAN (72 citations)</h3>
           <p>Novel GAN architecture for medical image super-resolution</p>
         </a>
         <a href="https://github.com/Fuzzy-sh/IOT-Data-Hyperledger" class="project" target="_blank">
